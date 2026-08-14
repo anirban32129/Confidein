@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://anirban32129.github.io/Confidein/sitemap.xml

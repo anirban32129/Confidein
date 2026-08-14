@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Payment — Confidein</title>
+  <meta name="description" content="Pay securely by UPI to unlock scheduling for your Confidein call.">
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://anirban32129.github.io/Confidein/payment.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="payment">
+<div class="site-shell">
+
+  <header class="site-header">
+    <div class="wrap-inner">
+      <a href="index.html" class="brand"><svg class="brand-mark" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><rect x="5" y="11" width="30" height="21" rx="3.5" fill="#2b5049"/><path d="M5 14.5 L20 25 L35 14.5 L35 14.5 C35 12.5 33.5 11 31.5 11 L8.5 11 C6.5 11 5 12.5 5 14.5 Z" fill="#3c6e64"/><circle class="mark-spark" cx="20" cy="20.5" r="3.4" fill="#b4893a"/></svg><span class="brand-word">Confidein<span>.</span></span></a>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="talk.html">Talk</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="page">
+      <a href="talk.html" class="backlink">&larr; back</a>
+      <h2>Pay to unlock scheduling.</h2>
+      <p style="color:var(--muted); font-size:.9rem; line-height:1.75; margin-top:8px;">Scan the QR or tap to pay with any UPI app. Once paid, tap continue to get our contact details.</p>
+
+      <div class="pay-summary">
+        <div class="row"><span class="k">Plan</span><span class="v" id="planLine">—</span></div>
+        <div class="row" id="freqRowLine" style="display:none;"><span class="k">Frequency</span><span class="v" id="freqLine">—</span></div>
+        <div class="row" id="daysRowLine" style="display:none;"><span class="k">Preferred days</span><span class="v" id="daysLine">—</span></div>
+        <div class="row" id="timeRowLine" style="display:none;"><span class="k">Preferred time</span><span class="v" id="timeLine">—</span></div>
+        <div class="row total"><span class="k">Amount now</span><span class="v" id="amountLine">—</span></div>
+        <div class="row" id="weeklyRowLine" style="display:none;"><span class="k">Est. weekly total</span><span class="v" id="weeklyLine">—</span></div>
+      </div>
+
+      <div class="qr-box">
+        <img id="qrImg" src="" alt="UPI QR code" width="220" height="220">
+        <div class="upi-id">Pay to <b>abinashdebnath32129@okaxis</b></div>
+        <a class="pay-btn" id="payBtn" href="#">Pay with UPI app</a>
+      </div>
+
+      <label for="upiTxnId">UPI transaction ID</label>
+      <input type="text" id="upiTxnId" placeholder="e.g. 622430433943" autocomplete="off">
+
+      <label for="googleTxnId">Google transaction ID</label>
+      <input type="text" id="googleTxnId" placeholder="e.g. CICAgLiqrOKkEQ" autocomplete="off">
+
+      <a class="continue-btn" id="continueBtn" href="contact.html" aria-disabled="true">I've paid — continue</a>
+      <div class="continue-hint" id="continueHint">Paste both transaction IDs from your payment app above to continue.</div>
+
+      <div class="pay-note">"Pay with UPI app" opens your UPI app (GPay, PhonePe, Paytm, etc.) with the amount and payee filled in. Once you've paid, tap "I've paid — continue" — it opens an email to us confirming your payment, then unlocks our contact details.</div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap-inner">
+      <span>&copy; 2026 Confidein</span>
+      <nav>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</div>
+</body>
+</html>
